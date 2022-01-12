@@ -1,0 +1,32 @@
+<div class="form-container">
+    <h2 align="center">Category</h2>
+    <form class="form-group" [formGroup]="categoryForm" (ngSubmit)="submit()"> 
+        <mat-form-field class="form-field" appearance="legacy">
+        <mat-label> Category Name: </mat-label>
+        <input matInput formControlName="name" class="form-control" id="name"  type="text" required>      
+        <mat-error *ngIf="f['name'].touched">
+            <span *ngIf="f['name'].errors && f['name'].errors['required']">This field is mandatory.</span>
+        </mat-error>
+        </mat-form-field>
+        <mat-form-field class="form-field" appearance="legacy">
+        <mat-label> Category Image: 
+        </mat-label>
+        <input matInput formControlName="image" class="form-control" type="url">
+        <mat-error *ngIf="f['image'].touched">
+            <span *ngIf="f['image'].errors && f['image'].errors['required']">This field is mandatory.</span>
+        </mat-error>
+        </mat-form-field>
+        <mat-form-field class="form-field" appearance="legacy">
+        <mat-label> Description: 
+        </mat-label>
+        <input matInput formControlName="description" class="form-control" type="text">
+        <mat-error *ngIf="f['description'].touched">
+            <span *ngIf="f['description'].errors && f['description'].errors['required']">This field is mandatory.</span>
+        </mat-error>
+        </mat-form-field>
+        <div class="buttons">
+            <button mat-raised-button color="primary" type="submit" class="saveButton">Save</button>
+            <button mat-raised-button color="primary" type="click" class="deleteButton">Delete</button>
+        </div>
+    </form>
+</div>
