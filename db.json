@@ -10,68 +10,24 @@
         {
             "id": 1,
             "name": "clothes",
-            "products": [
-                {
-                    "id": 1,
-                    "name": "T-shirt",
-                    "price": 12,
-                    "description": "something",
-                    "color": "white",
-                    "size": "small",
-                    "url": "url"
-                }
-            ],
             "url": "string",
             "dateEntry": "01/01/2022"
         },
         {
             "id": 2,
             "name": "shoes",
-            "products": [
-                {
-                    "id": 2,
-                    "name": "Boots",
-                    "price": 20,
-                    "description": "something",
-                    "color": "black",
-                    "size": "large",
-                    "url": "url"
-                }
-            ],
             "url": "string",
             "dateEntry": "01/01/2022"
         },
         {
             "id": 3,
             "name": "accesories",
-            "products": [
-                {
-                    "id": 1,
-                    "name": "necklace",
-                    "price": 5,
-                    "description": "something",
-                    "color": "purple",
-                    "size": "medium",
-                    "url": "url"
-                }
-            ],
             "url": "string",
             "dateEntry": "01/01/2022"
         },
         {
             "id": 4,
             "name": "kids",
-            "products": [
-                {
-                    "id": 1,
-                    "name": "Pants",
-                    "price": 10,
-                    "description": "something",
-                    "color": "blue",
-                    "size": "small",
-                    "url": "url"
-                }
-            ],
             "url": "string",
             "dateEntry": "01/01/2022"
         }
@@ -87,5 +43,48 @@
             "status": "Pending"
         }
        
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "T-shirt",
+            "price": 12,
+            "description": "something",
+            "color": "white",
+            "size": "small",
+            "url": "url",
+            "categorie_id": 1
+        },
+        {
+            "id": 2,
+            "name": "Boots",
+            "price": 20,
+            "description": "something",
+            "color": "black",
+            "size": "large",
+            "url": "url",
+            "categorie_id": 2
+        },
+        {
+            "id": 3,
+            "name": "necklace",
+            "price": 5,
+            "description": "something",
+            "color": "purple",
+            "size": "medium",
+            "url": "url",
+            "categorie_id": 3
+        },
+        {
+            "id": 4,
+            "name": "Pants",
+            "price": 10,
+            "description": "something",
+            "color": "blue",
+            "size": "small",
+            "url": "url",
+            "categorie_id": 4
+        }
+      
     ]
 }
