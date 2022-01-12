@@ -12,12 +12,17 @@ import { HomeComponent } from './pages/home/home.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { environment } from 'src/environments/environment';
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { AngularFireModule } from "@angular/fire/compat";
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { CategoriesListComponent } from './pages/categories-list/categories-list.component';
+import { CategoriesGridComponent } from './components/categories-grid/categories-grid.component';
+import { CategoriesFormComponent } from './components/categories-form/categories-form.component';
+
 
 
 @NgModule({
@@ -29,6 +34,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     LoginFormComponent,
     CategoriesComponent,
     CarouselComponent,
+    CategoriesListComponent,
+    CategoriesGridComponent,
+    CategoriesFormComponent,
 
 
   ],
@@ -39,6 +47,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     MatIconModule,
     MatDialogModule,
     MatFormFieldModule, 
+    MatGridListModule,
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,

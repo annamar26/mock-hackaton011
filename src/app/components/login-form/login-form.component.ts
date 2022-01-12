@@ -34,7 +34,7 @@ export class LoginFormComponent implements OnInit {
   loginAdmin(arg1: string, arg2: string){
     this.loginfirebase.logIn(arg1, arg2)
   .then(()=>
-  this.Router.navigate(["categories"]))
+  this.Router.navigate(["categoryList"]))
   .catch((error)=>{
     alert(error.message)
   })
