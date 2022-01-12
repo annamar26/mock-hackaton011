@@ -20,7 +20,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { GridHomeComponent } from './components/grid-home/grid-home.component';
 import { MatGridListModule } from '@angular/material/grid-list';
-
+import { CardComponent } from './components/card/card.component';
+import {MatCardModule} from '@angular/material/card';
+import { CrudButtonsComponent } from './components/crud-buttons/crud-buttons.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
     CategoriesComponent,
     CarouselComponent,
     GridHomeComponent,
+    CardComponent,
+    CrudButtonsComponent,
+
+
 
 
   ],
@@ -49,6 +55,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
     AngularFireAuthModule,
     NgbModule,
 		MatGridListModule
+    MatCardModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
