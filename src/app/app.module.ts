@@ -16,6 +16,8 @@ import { environment } from 'src/environments/environment';
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { AngularFireModule } from "@angular/fire/compat";
 import { CategoriesComponent } from './pages/categories/categories.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 @NgModule({
@@ -26,6 +28,7 @@ import { CategoriesComponent } from './pages/categories/categories.component';
     ModalComponent,
     LoginFormComponent,
     CategoriesComponent,
+    CarouselComponent,
 
 
   ],
@@ -40,7 +43,8 @@ import { CategoriesComponent } from './pages/categories/categories.component';
     FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
