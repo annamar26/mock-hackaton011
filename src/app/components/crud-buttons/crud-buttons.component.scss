@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+$font-color: #323232;
+section{
+    display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+max-width: 30%;
+margin-top: 3.5rem;
+button {
+    font-family: "Lato", sans-serif;
+    background: none;
+    border: none;
+    color: $font-color;
+  }
+}
