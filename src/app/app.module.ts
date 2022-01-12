@@ -12,7 +12,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatGridListModule} from '@angular/material/grid-list';
 import { environment } from 'src/environments/environment';
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { AngularFireModule } from "@angular/fire/compat";

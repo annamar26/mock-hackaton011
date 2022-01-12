@@ -20,6 +20,6 @@ export class GridHomeComponent implements OnInit {
   }
 
 	navigateCategories(){
-		this.Router.navigate(["categories"])
+		this.Router.navigate(["categoryList"])
 	}
 }

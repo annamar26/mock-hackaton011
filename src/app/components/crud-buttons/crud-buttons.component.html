@@ -1,7 +1,7 @@
 <section *ngIf="userEmail | async as user" >
-    <button mat-button >
+    <button mat-button (click)='navigateForm()'>
     Edit
   </button>
-  <button mat-button >
+  <button mat-button (click)='navigateForm()'>
     Delete
   </button></section>

@@ -10,7 +10,7 @@ const redirectUnauthorizedToHome = () => redirectUnauthorizedTo(['']);
 const routes: Routes = [{
   path: "", component:HomeComponent, pathMatch: "full"
 },{
-  path: "category", component: CategoriesComponent, pathMatch: "full", canActivate: [AngularFireAuthGuard], data: { authGuardPipe: redirectUnauthorizedToHome } 
+   path: "category", component: CategoriesComponent, pathMatch: "full", /*canActivate: [AngularFireAuthGuard], data: { authGuardPipe: redirectUnauthorizedToHome } */
 },
 {
   path: "categoryList", component: CategoriesListComponent, pathMatch: "full"
