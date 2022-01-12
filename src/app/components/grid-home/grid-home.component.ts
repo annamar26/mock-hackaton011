@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-grid-home',
@@ -13,9 +14,12 @@ export class GridHomeComponent implements OnInit {
 		{ text: "img3" ,cols: 1, rows: 1, color: 'lightpink' }
 	]
 
-  constructor() { }
+  constructor(private Router: Router) { }
 
   ngOnInit(): void {
   }
 
+	navigateCategories(){
+		this.Router.navigate(["categories"])
+	}
 }

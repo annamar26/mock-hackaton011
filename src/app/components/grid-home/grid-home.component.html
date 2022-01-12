@@ -1,9 +1,13 @@
-<p>grid-home works!</p>
-<mat-grid-list cols="3" rowHeight="250px">
-	<mat-grid-tile *ngFor="let tile of tiles"
-	[colspan]="tile?.cols"
-	[rowspan]="tile?.rows"
-	[style.background]="tile?.color">
-		{{tile?.text}}
-	</mat-grid-tile>
-</mat-grid-list>
+<div>
+  <mat-grid-list cols="3" rowHeight="250px" gutterSize="1rem">
+    <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile?.cols"
+      [rowspan]="tile?.rows"
+      [style.background]="tile?.color"
+      (click)="navigateCategories()"
+    >
+      {{ tile?.text }}
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
