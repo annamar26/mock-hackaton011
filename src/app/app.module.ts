@@ -23,6 +23,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { CardComponent } from './components/card/card.component';
 import {MatCardModule} from '@angular/material/card';
 import { CrudButtonsComponent } from './components/crud-buttons/crud-buttons.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { CrudButtonsComponent } from './components/crud-buttons/crud-buttons.com
     GridHomeComponent,
     CardComponent,
     CrudButtonsComponent,
+    FooterComponent,
 
 
 
@@ -54,7 +56,7 @@ import { CrudButtonsComponent } from './components/crud-buttons/crud-buttons.com
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
     NgbModule,
-		MatGridListModule
+		MatGridListModule,
     MatCardModule
 
 
