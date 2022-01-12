@@ -1,0 +1,13 @@
+<div>
+  <mat-grid-list cols="3" rowHeight="18rem" gutterSize="1rem">
+    <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile?.cols"
+      [rowspan]="tile?.rows"
+      (click)="navigateCategories()"
+    >
+    <section class='mat-grid-tile-content'>
+     <app-card></app-card></section>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

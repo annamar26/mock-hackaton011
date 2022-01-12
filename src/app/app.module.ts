@@ -22,7 +22,12 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { CategoriesListComponent } from './pages/categories-list/categories-list.component';
 import { CategoriesGridComponent } from './components/categories-grid/categories-grid.component';
 import { CategoriesFormComponent } from './components/categories-form/categories-form.component';
-
+import { GridHomeComponent } from './components/grid-home/grid-home.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { CardComponent } from './components/card/card.component';
+import {MatCardModule} from '@angular/material/card';
+import { CrudButtonsComponent } from './components/crud-buttons/crud-buttons.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -37,6 +42,12 @@ import { CategoriesFormComponent } from './components/categories-form/categories
     CategoriesListComponent,
     CategoriesGridComponent,
     CategoriesFormComponent,
+    GridHomeComponent,
+    CardComponent,
+    CrudButtonsComponent,
+    FooterComponent,
+
+
 
 
   ],
@@ -46,14 +57,21 @@ import { CategoriesFormComponent } from './components/categories-form/categories
     BrowserAnimationsModule,
     MatIconModule,
     MatDialogModule,
-    MatFormFieldModule, 
+  MatFormFieldModule, 
     MatGridListModule,
+
+    MatFormFieldModule,
+
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    NgbModule
+    NgbModule,
+		MatGridListModule,
+    MatCardModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
