@@ -15,7 +15,6 @@ export class CrudButtonsComponent implements OnInit {
   ngOnInit(): void {
   }
   navigateForm(){
-    console.log('clikeado')
 this.Router.navigate(["category"])
   }
 }
