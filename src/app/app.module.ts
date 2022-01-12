@@ -23,6 +23,7 @@ import {MatCardModule} from '@angular/material/card';
 import { CrudButtonsComponent } from './components/crud-buttons/crud-buttons.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,8 +33,11 @@ import { CrudButtonsComponent } from './components/crud-buttons/crud-buttons.com
     LoginFormComponent,
     CategoriesComponent,
     CarouselComponent,
+
     CardComponent,
     CrudButtonsComponent,
+
+
 
 
   ],
@@ -51,6 +55,7 @@ import { CrudButtonsComponent } from './components/crud-buttons/crud-buttons.com
     AngularFireAuthModule,
     NgbModule,
     MatCardModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
