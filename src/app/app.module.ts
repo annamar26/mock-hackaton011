@@ -18,6 +18,8 @@ import { AngularFireModule } from "@angular/fire/compat";
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { GridHomeComponent } from './components/grid-home/grid-home.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -29,6 +31,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     LoginFormComponent,
     CategoriesComponent,
     CarouselComponent,
+    GridHomeComponent,
 
 
   ],
@@ -38,13 +41,14 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     BrowserAnimationsModule,
     MatIconModule,
     MatDialogModule,
-    MatFormFieldModule, 
+    MatFormFieldModule,
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    NgbModule
+    NgbModule,
+		MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
