@@ -6,9 +6,8 @@ $font-color: #323232;
   box-sizing: border-box;
 }
 div {
-   max-width: 30%;
-  height: 12rem;
-  position: relative;
+width: 100%;
+position: relative;
  
   
 
@@ -26,14 +25,14 @@ div {
   section {
     width: 100%;
     background-color: rgba(238, 229, 218, 0.678);
-    top: 50%;
+    margin-top: 3rem;
     height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 

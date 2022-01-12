@@ -9,9 +9,9 @@ import { Router } from '@angular/router';
 export class GridHomeComponent implements OnInit {
 
 	tiles = [
-		{ text: "img1" ,cols: 1, rows: 1, color: 'lightblue' },
-		{ text: "img2" ,cols: 1, rows: 1, color: 'lightgreen' },
-		{ text: "img3" ,cols: 1, rows: 1, color: 'lightpink' }
+		{ cols: 1, rows: 1 },
+		{ cols: 1, rows: 1},
+		{ cols: 1, rows: 1 }
 	]
 
   constructor(private Router: Router) { }
