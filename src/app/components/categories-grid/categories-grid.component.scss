@@ -4,7 +4,35 @@ div{
 	margin-right: 3rem;
 	position: relative;
 	align-items: flex-start;
-	margin-top: 3rem;
+	margin-top: 1rem;
+	section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0%;
+		width: 100%;
+		margin-bottom: 2rem;
+		div{
+			display: flex;
+			align-items: flex-end;
+			justify-content: flex-end;
+			input{
+				border-color: #CB6CE6;
+				border-radius: 10px;
+			}
+		}
+		a{
+			color: #323232;
+			font-family: "Lato", sans-serif;
+			text-decoration: #CB6CE6;
+			
+		}
+		a:hover{
+			color:#CB6CE6;
+		  }
+    }
+
 	app-card{
 		margin-top: 0;
 		width: 100%;
@@ -20,5 +48,8 @@ div{
 		justify-content: center;
 		height: fit-content;
 		padding: 0;
+	}
+	app-crud-buttons{
+		width: 100%;
 	}
 }

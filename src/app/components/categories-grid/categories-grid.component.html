@@ -1,5 +1,15 @@
 <div>
-  <mat-grid-list cols="3" rowHeight="20rem" gutterSize="1rem">
+  <section>
+    <a (click)="navigateForm()" *ngIf="userEmail | async as user">Add new category</a>
+      <div>
+        <input placeholder="Search products"/>
+        <mat-icon>search</mat-icon>
+
+      </div>
+ 
+</section>
+
+  <mat-grid-list cols="3" rowHeight="25rem" gutterSize="1rem">
     <mat-grid-tile
       *ngFor="let tile of tiles"
       [colspan]="tile?.cols"
@@ -8,7 +18,7 @@
     >
     <section class='mat-grid-tile-content'>
      <app-card></app-card>
-    </section><app-crud-buttons></app-crud-buttons>
+    </section ><app-crud-buttons align="right"></app-crud-buttons>
     </mat-grid-tile>
   </mat-grid-list>
 </div>

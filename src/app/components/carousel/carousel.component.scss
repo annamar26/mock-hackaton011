@@ -19,6 +19,15 @@ section{
             border-radius: 10px;
         };
     }
+    a{
+        color: #323232;
+        font-family: "Lato", sans-serif;
+        text-decoration: #CB6CE6;
+        
+    }
+    a:hover{
+        color:#CB6CE6;
+      }
 }
 
 div{
@@ -33,11 +42,5 @@ div{
         }
     }
 
-a{
-    color: #323232;
-    font-family: "Lato", sans-serif;
-}
-a:hover{
-    color:#CB6CE6;
-  }
+
 }
