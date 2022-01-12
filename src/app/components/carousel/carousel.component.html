@@ -1,0 +1,21 @@
+<section>
+    <a href="">See all promotions</a>
+    <section>
+        <input placeholder="Search products"/>
+        <mat-icon>search</mat-icon>
+    </section>
+</section>
+<div>
+    <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+        <ng-template ngbSlide *ngFor="let img of images; index as i">
+          <div class="carousel-caption">
+          </div>
+          
+            <div class="picsum-img-wrapper">
+              <img [src]="img.src">
+            </div>
+        </ng-template>
+      </ngb-carousel>
+</div>
+  
+  <hr>

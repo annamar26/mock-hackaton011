@@ -16,14 +16,11 @@ import { environment } from 'src/environments/environment';
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { AngularFireModule } from "@angular/fire/compat";
 import { CategoriesComponent } from './pages/categories/categories.component';
-<<<<<<< Updated upstream
-=======
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CardComponent } from './components/card/card.component';
 import {MatCardModule} from '@angular/material/card';
 import { CrudButtonsComponent } from './components/crud-buttons/crud-buttons.component';
->>>>>>> Stashed changes
 
 
 @NgModule({
@@ -34,12 +31,9 @@ import { CrudButtonsComponent } from './components/crud-buttons/crud-buttons.com
     ModalComponent,
     LoginFormComponent,
     CategoriesComponent,
-<<<<<<< Updated upstream
-=======
     CarouselComponent,
     CardComponent,
     CrudButtonsComponent,
->>>>>>> Stashed changes
 
 
   ],
@@ -54,13 +48,9 @@ import { CrudButtonsComponent } from './components/crud-buttons/crud-buttons.com
     FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-<<<<<<< Updated upstream
-    AngularFireAuthModule
-=======
     AngularFireAuthModule,
     NgbModule,
     MatCardModule
->>>>>>> Stashed changes
   ],
   providers: [],
   bootstrap: [AppComponent]
