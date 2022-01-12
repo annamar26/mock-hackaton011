@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 import { ModalComponent } from '../modal/modal.component';
 
 @Component({
@@ -8,8 +10,8 @@ import { ModalComponent } from '../modal/modal.component';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor(public dialog: MatDialog) {}
+userEmail= this.userData.getUser()
+  constructor(public dialog: MatDialog, private Router: Router, private userData: AuthService ) {}
 
   openDialog() {
     const dialogRef = this.dialog.open(ModalComponent);
@@ -20,5 +22,8 @@ export class HeaderComponent implements OnInit {
   }
   ngOnInit(): void {
   }
-
+  navigateToHome(){
+    this.Router.navigate([''])
+  }
+  
 }
