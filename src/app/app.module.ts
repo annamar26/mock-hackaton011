@@ -16,6 +16,7 @@ import { environment } from 'src/environments/environment';
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { AngularFireModule } from "@angular/fire/compat";
 import { CategoriesComponent } from './pages/categories/categories.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { CategoriesComponent } from './pages/categories/categories.component';
     ModalComponent,
     LoginFormComponent,
     CategoriesComponent,
+    FooterComponent,
 
 
   ],

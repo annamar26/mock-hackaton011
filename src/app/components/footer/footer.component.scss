@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+$font-color: #323232;
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:3px solid #CB6CE6;
+    font-family: "Lato", sans-serif;
+    color:$font-color;
+    font-size:20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    padding: 0px;
+    align-content: center;
+
+    
+}
