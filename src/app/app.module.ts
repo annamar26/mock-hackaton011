@@ -18,6 +18,10 @@ import { AngularFireModule } from "@angular/fire/compat";
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { CardComponent } from './components/card/card.component';
+import {MatCardModule} from '@angular/material/card';
+import { CrudButtonsComponent } from './components/crud-buttons/crud-buttons.component';
+
 
 
 @NgModule({
@@ -29,6 +33,11 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     LoginFormComponent,
     CategoriesComponent,
     CarouselComponent,
+
+    CardComponent,
+    CrudButtonsComponent,
+
+
 
 
   ],
@@ -44,7 +53,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    NgbModule
+    NgbModule,
+    MatCardModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

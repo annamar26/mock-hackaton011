@@ -22,6 +22,7 @@ section{
 }
 div{
     display: flex;
+
     justify-content: center;
     align-self: center;
     width: 100%;
@@ -29,11 +30,7 @@ div{
         img{
             width: 90%;
         }
-    }
-    .sr-only{
-        display: none;
-    }
-}
+
 a{
     color: #323232;
     font-family: "Lato", sans-serif;
@@ -46,3 +43,4 @@ a:hover{
     color: #CB6CE6;
 }
   
+
